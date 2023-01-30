@@ -1,0 +1,152 @@
+
+.AboutMe{
+    width: 100%;
+    padding-block: 1rem;
+    position: relative;
+    display: grid;
+    grid-row-gap: 25px;
+    height: 100%;
+}
+
+.about_header{
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.about_main{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.about_main_pic{
+
+    width: fit-content;
+    display: grid;
+}
+
+
+.about_main_pic img{
+    display: grid;
+    margin: 0 auto;
+    width: 600px;
+    
+}
+
+.about_main_title{
+    display: grid;
+    /* width: 45%; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.about_title_text{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.lang_icon{
+    height: 152px;
+    width: 152px;
+    margin-inline: 25px;
+    display: inline-block;
+  }
+
+.lang_icon img{
+    width: 152px;
+    height: 152px;
+
+}
+
+.about_describe{
+    /* width: 75%; */
+    margin: 0 10%;
+    display: grid;
+    font-size: larger;
+}
+
+.about_skills{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 25px;
+
+}
+
+.about_skills_header{
+    display: grid;
+    font-size: larger;
+}
+
+.about_skills_desc{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: large;
+}
+.about_skills_backend{
+    border-right: 1px solid gray;
+    margin-right: 70px;
+}
+.about_skills_frontend{
+    border-right: 1px solid gray;
+    margin-right: 70px;
+}
+
+.about_resume{
+    background: whitesmoke;
+}
+@media screen and (max-width: 1300px) {
+    .about_main {
+        display: grid;
+        height: fit-content;
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-row-gap: 20px;
+    } 
+
+    .about_main_pic img{
+        display: grid;
+        margin: 0 auto;
+        width: 300px;
+        
+    }
+
+    .about_main_title{
+        grid-row-gap: 25px;
+        justify-content: center;
+    }
+    
+    .about_describe{
+        font-size: medium;
+    }
+
+    .about_skills_desc{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 25px;
+    }
+
+    .lang_icon{
+        height: 76px;
+        width: 76px;
+        margin-inline: 14px;
+      }
+    
+    .lang_icon img{
+        width: 76px;
+        height: 76px;
+    
+    }
+
+    .about_skills_backend{
+        border: none; 
+    }
+    .about_skills_frontend{
+        border: none;
+    }
+}
+

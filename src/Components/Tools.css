@@ -1,0 +1,141 @@
+/* .circles_container{
+    margin-top: -130px;
+} */
+.tool_main{
+    margin-top: 130px;
+}
+
+.tool_header{
+    display: flex;
+    margin: 3vh 0;
+    width: 100%;
+    justify-content: center;
+    color: #582CB0;
+}
+.tools{
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    margin: 30px auto;
+    height: fit-content;
+    width: fit-content;
+    background-color: #BEF4D4;
+    border: 5px solid #582CB0;
+    border-radius: 30px;
+    box-shadow: 12px 12px 0 -5px #0091FE, 12px 12px 0 0 #582CB0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.tool_img_div{
+    display: grid;
+    
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.tool_img{
+    height: fit-content;
+    width: fit-content;
+    
+  }
+
+.tool_img img{
+    width: 130px;
+    height:130px;
+}
+
+.tool_desc{
+    align-items: center;
+    width: 200px;
+    margin: 5px;
+    justify-content: center;
+}
+.right_arrow{
+    margin-right: 15vw;
+}
+.left_arrow{
+    margin-left: 15vw;
+}
+.right_arrow button{
+    height: 50px;
+    width:100px;
+    background: linear-gradient(163.39deg, #B1DDF6 -36.9%, #6F99E1 88.51%);
+    border-radius: 23.5px;
+    box-shadow: -4px 4px 10px rgb(130, 130, 130);
+    border: none;
+    color: whitesmoke;
+}
+
+.left_arrow button{
+    height: 50px;
+    width:100px;
+    background: linear-gradient(163.39deg, #B1DDF6 -36.9%, #6F99E1 88.51%);
+    border-radius: 23.5px;
+    box-shadow: 4px 4px 10px rgb(130, 130, 130);
+    border: none;
+    color: whitesmoke;
+}
+
+.list_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tool_list{
+    /* display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto; */
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+@media screen and (max-width: 900px) {
+    .right_arrow {
+        margin-right: 10vw;
+    }
+    .left_arrow{
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .card{
+        width: 200px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .tool_img img{
+        width: 60px;
+        height:60px;
+        padding: 5px;
+    }
+    .tool_desc{
+        width: 175px;
+        margin-bottom: 8px;
+    }
+    .right_arrow {
+        margin-right: 5vw;
+    }
+    .left_arrow{
+        margin-left: 5vw;
+    }
+    .right_arrow button{
+        height: 25px;
+        width: 50px;
+    }
+    .left_arrow button{
+        height: 25px;
+        width: 50px;
+    }
+}
+

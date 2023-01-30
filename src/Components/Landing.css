@@ -1,0 +1,234 @@
+.landing{
+    width: 100%;
+}
+
+.bg_landing {
+    /* background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite; */
+    position: relative;
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    padding:0;
+    /* margin-top:130px;  */
+  }
+  .cube {
+    position: absolute;
+    z-index: -1;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: #FFF ;
+  }
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+.landing_contain{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 30rem;
+    justify-content: space-between;
+
+}
+.landing_bg{
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.landing_body{
+    width: 100%;
+    height: fit-content;
+    margin-top: 130px;
+}
+.landing_left{
+    display: inline-block;
+    margin: auto;
+    margin-left: 10vw;
+}
+
+
+.welcome_text{
+    /* height: 275px; */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.user{
+    color: #33e557;
+    font-weight: 400;
+
+}
+.landing_text2{
+    width: 224px;
+    height: 23px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #0B47A0;
+
+    mix-blend-mode: luminosity;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.landing_familiar_tools{
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.25));
+}
+.dot {
+    height: 52px;
+    width: 52px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+.dot img{
+    width: 52px;
+    height: 52px;
+}  
+
+.forward_arrow{
+    margin: 20px auto;
+    position: relative;
+    margin-bottom: 20px ;
+    justify-content: center;
+    width: 65px;
+    height: 75px;
+    color: #000000;
+  }
+@media screen and (max-width: 1300px) {
+    .landing_body{
+        height: fit-content;
+    }
+    .landing_contain {
+        display: grid;
+        height: fit-content;
+        grid-template-columns: auto;
+        justify-content: center;
+    } 
+
+    .landing_bg{
+        grid-row: 1;
+        margin: auto;
+    }
+    .landing_left{
+        grid-row: 2;
+        margin: auto;
+    }
+
+    .welcome_text{
+        font-size: 36px;
+        line-height: 37px;
+        text-align: center;
+        margin-bottom: 20px;
+        /* text-justify: left; */
+    }
+
+    .landing_familiar_tools{
+        margin-bottom: 30px;
+
+    }
+
+    .landing_img img{
+        width: 250px;
+    }
+    
+    .dot{
+        width: 26px;
+        height: 26px; 
+        background-size: 26px;  
+    }
+
+    .landing_familiar_tools{
+        margin: 5vw;
+    }
+
+    .landing_text2{
+        margin: 5vw;
+    }
+
+    .landing{
+        position: relative;
+    }
+
+    .dot img{
+        width: 26px;
+        height: 26px;
+    }
+
+    .forward_arrow{
+        width: 32px;
+        height: 40px;
+    }
+
+    .forward_arrow img{
+        width: 32px;
+        height: 40px;
+    }
+}
+
+
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  

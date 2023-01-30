@@ -1,0 +1,15 @@
+*{
+  font-family: "Work Sans", sans-serif;
+}
+
+body{
+  background-attachment: fixed;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}

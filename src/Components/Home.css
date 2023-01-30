@@ -1,0 +1,12 @@
+.background {
+    background: linear-gradient(145deg,  #FFCC70, #C850C0,#4158D0);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+  }
+
