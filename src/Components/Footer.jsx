@@ -3,7 +3,7 @@ import {
     TiSocialInstagram,
     TiSocialLinkedin,
     TiSocialFacebook,
-    TiMail,
+    // TiMail,
 } from "react-icons/ti";
 import { FaGithub} from 'react-icons/fa';
 import "./Footer.css"

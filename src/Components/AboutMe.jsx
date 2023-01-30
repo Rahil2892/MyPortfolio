@@ -4,25 +4,25 @@ import react_icon from "../Img/react_icon.png";
 import python_icon from "../Img/python_icon.png";
 import c_icon from "../Img/c_icon.png";
 import "./AboutMe.css"
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import resume_pdf from "./rahil_resume.pdf";
 // import './CircleAnimation.css'
 
 const AboutMe = () =>{
-    const onButtonClick = () => {
-        // using Java Script method to get PDF file
-        fetch('rahil_resume.pdf').then(response => {
-            response.blob().then(blob => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'rahil_resume.pdf';
-                alink.click();
-            })
-        })
-    }
+    // const onButtonClick = () => {
+    //     // using Java Script method to get PDF file
+    //     fetch('rahil_resume.pdf').then(response => {
+    //         response.blob().then(blob => {
+    //             // Creating new object of PDF file
+    //             const fileURL = window.URL.createObjectURL(blob);
+    //             // Setting various property values
+    //             let alink = document.createElement('a');
+    //             alink.href = fileURL;
+    //             alink.download = 'rahil_resume.pdf';
+    //             alink.click();
+    //         })
+    //     })
+    // }
     return (
         <>
          <div className="AboutMe" id="aboutMe">
